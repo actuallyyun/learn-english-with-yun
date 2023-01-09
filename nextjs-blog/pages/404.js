@@ -12,7 +12,7 @@ export default function Custom404() {
             </Head>
             <Image
                 priority
-                src='/../public/images/404.jpeg'
+                src='/../public/static/images/404.jpeg'
                 height={400}
                 width={400}
                 alt="404cat" />

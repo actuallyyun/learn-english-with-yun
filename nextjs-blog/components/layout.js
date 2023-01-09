@@ -4,6 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import styles from './layout.module.css'
 
+
 const name = 'Yun Ji'
 export const siteTitle = 'Learn English With Yun'
 
@@ -32,7 +33,7 @@ export default function Layout({ children, home }) {
                     <>
                         <Image
                             priority
-                            src='/images/profile.jpg'
+                            src='/images/profile.JPG'
                             className={utilStyles.borderCircle}
                             height={144}
                             width={144}
