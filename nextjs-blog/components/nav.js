@@ -25,12 +25,7 @@ const DarkModeToogle=(props)=>{
   <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
 </svg>
 )
-
-
-            }
-            
-            
-            
+            }                 
             </button>
     )
 }
@@ -74,18 +69,11 @@ export default function Nav(props) {
                     src="/images/octopus-svgrepo-com.svg"
                     alt="Your Company"
                   />
-                  <img
-                    className="hidden h-8 w-auto lg:block"
-                    src="/images/octopus-svgrepo-com.svg"
-                    alt="Your Company"
-                  />
                   <div >
                     <div className='flex text-gray-900 dark:text-white font-bold'>GoodEnough English</div>
                     <div className='dark:text-slate-50 text-gray-900 font-light text-xs text-right'>with Yun Ji</div>
                   </div>
                 </div>
-                
-                
               </div>
               <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
