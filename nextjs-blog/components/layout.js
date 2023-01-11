@@ -11,12 +11,12 @@ const name = 'Yun Ji'
 export const siteTitle = 'Learn English With Yun'
 
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
 
    const [darkMode, setDarkMode]=useState(false)
-   console.log('darkmode should change',darkMode)
+
    const handleDarkModeChange=(darkMode)=>{
-    console.log('darkmode button is clicked')
+
     setDarkMode(darkMode=>!darkMode)
 
    }
@@ -42,47 +42,10 @@ export default function Layout({ children, home }) {
            
             <header className='relative z-50 w-full flex-none bg-white dark:bg-black'>
             <Nav darkMode={darkMode} handleDarkModeChange={handleDarkModeChange}/>
-                {home ? (
-                    <>
-                    
-                        <Image
-                            priority
-                            src='/images/profile.JPG'
-                            className={utilStyles.borderCircle}
-                            height={144}
-                            width={144}
-                            alt="yun" />
-                        <h1 className={utilStyles.heading2Xl}>{name}</h1>
-                    </>
-                ) : (
-                    <>
-                        <Link href='/'>
-                            <Image
-                                priority
-                                src='/images/profile.JPG'
-                                className={utilStyles.borderCircle}
-                                height={108}
-                                width={108}
-                                alt="yun"
-                            />
-                        </Link>
-                        <h2 className={utilStyles.borderCircle}>
-
-                            <Link href='/' className={utilStyles.colorInherit}>
-                                {name}
-                            </Link>
-                        </h2>
-                    </>
-                )}
             </header>
-            <main>{children}</main>
-            {!home && (
-                <div className={styles.backToHome}>
-                    <Link href="/"> 👈🏻 Back to Home</Link>
-
-                </div>
-
-            )}
+         
+                {children}
+                
 
         </div>
 
