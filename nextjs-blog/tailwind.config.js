@@ -4,9 +4,17 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx}',
   './components/**/*.{js,ts,jsx,tsx}',
   './app/**/*.{js,ts,jsx,tsx}',
+  "./node_modules/flowbite/**/*.js",
 ],
   theme: {
     extend: {},
+    container:{
+      center:true,
+      margin:'1rem',
+    }
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
+  darkMode:'class',
 }
