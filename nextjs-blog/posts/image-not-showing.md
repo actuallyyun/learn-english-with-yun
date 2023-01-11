@@ -1,5 +1,5 @@
 ---
-title: "Why is my image not found? Deploy Next.js blog project to Vercel"
+title: "Why isn't my image found? Deploy Next.js blog project to Vercel"
 date: "2023-01-09"
 ---
 

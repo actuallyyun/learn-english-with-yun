@@ -3,15 +3,27 @@ import Image from 'next/image'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import styles from './layout.module.css'
+import Nav from '../components/nav'
+import {useState} from 'react'
 
 
 const name = 'Yun Ji'
 export const siteTitle = 'Learn English With Yun'
 
+
 export default function Layout({ children, home }) {
+
+   const [darkMode, setDarkMode]=useState(false)
+   console.log('darkmode should change',darkMode)
+   const handleDarkModeChange=(darkMode)=>{
+    console.log('darkmode button is clicked')
+    setDarkMode(darkMode=>!darkMode)
+
+   }
+
     return (
 
-        <div className={styles.container}>
+        <div className={`${styles.container} ${darkMode? 'dark':''}`} >
             <Head>
                 <link rel="icon" href="/favicon.ico" />
                 <meta
@@ -27,10 +39,12 @@ export default function Layout({ children, home }) {
                 <meta name="og:title" content={siteTitle} />
                 <meta name="twitter:card" content="summary_large_image" />
             </Head>
-
-            <header className={styles.header}>
+           
+            <header className='relative z-50 w-full flex-none bg-white dark:bg-black'>
+            <Nav darkMode={darkMode} handleDarkModeChange={handleDarkModeChange}/>
                 {home ? (
                     <>
+                    
                         <Image
                             priority
                             src='/images/profile.JPG'
