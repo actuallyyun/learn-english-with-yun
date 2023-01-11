@@ -18,7 +18,6 @@ const Bubbles=(props)=>{
     <div className={`${bubbleStyles.bubble} ${bubbleStyles.x9}`}></div>
     <div className={`${bubbleStyles.bubble} ${bubbleStyles.x10}`}></div>
   </div>
-
   )
 }
 
@@ -48,11 +47,10 @@ useEffect(()=>{
       <div className="relative">
         <div className="pb-16">
           <div className={`absolute top-0 bg-no-repeat bg-cover w-full lg:bg-fixed bg-scroll z-0  ${utilStyles.backGroundImage} bg-background` }>
-         
           <Bubbles hideBubbles={hideBubbles}/>
           </div>
       <div className={`relative flex flex-col items-center justify-center text-center pt-8 ${utilStyles.introSectionHeight}`}>
-        <div className="h-full sm:pt-10 pt-0 flex flex-col items-center justify-center">
+        <div className="h-full sm:pt-20 pt-10 flex flex-col items-center justify-center">
           
           <div className="">
           <div className='inline-flex'>
@@ -84,8 +82,11 @@ useEffect(()=>{
           </div>
        
           </div>
-          <div className="flex items-end justify-center w-full h-full">
-           
+          <div className="flex items-center justify-center w-full h-full">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-24 h-6 " className='w-24 animate-bounce'>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+</svg>
+
           </div>
         </div>
         
