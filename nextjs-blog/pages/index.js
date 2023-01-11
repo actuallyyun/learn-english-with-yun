@@ -3,6 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import bubbleStyles from '../styles/bubble.module.css'
 import {useState, useEffect} from 'react'
+import Arrow from '../components/arrow'
 
 const Bubbles=(props)=>{
   return (
@@ -77,15 +78,13 @@ useEffect(()=>{
             <h1 className={`font-semibold text-2xl text-white pt-8 px-5 md:max-w-3xl lg:text-4xl sm:pt-0 ${utilStyles.heading2Xl}`}>
               
               Your English is Great. <br></br>Use English With Confidence <br></br>Right Now
-              
+    
               </h1>
           </div>
        
           </div>
           <div className="flex items-center justify-center w-full h-full">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="white" class="w-24 h-6 " className='w-24 animate-bounce'>
-  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-</svg>
+         <Arrow />
 
           </div>
         </div>
