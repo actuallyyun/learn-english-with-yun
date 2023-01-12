@@ -50,3 +50,21 @@
 .lightText {
     color: #666;
 }
+
+.backGroundImage{
+    background-image: url('/images/background-image-home.jpg');
+    background-position: 50% top;
+    height:560px;
+
+}
+
+.introSectionHeight{
+    height: 560px;
+}
+
+.introTextHeight{
+    min-height: 176px;
+}
+
+
+

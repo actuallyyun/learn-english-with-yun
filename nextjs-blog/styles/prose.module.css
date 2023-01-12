@@ -1,0 +1,12 @@
+.prose{
+    max-width: 700px;
+    
+}
+
+.prose >p{
+    margin-bottom: 1.2rem;
+}
+
+.testimony{
+    max-width: 765px;
+}
