@@ -7,6 +7,8 @@ import Arrow from '../components/arrow'
 import Stars from '../components/stars'
 import proseStyles from '../styles/prose.module.css'
 import {Typewriter} from 'react-simple-typewriter'
+import Image from 'next/image'
+import Link from 'next/link'
 
 
 const Bubbles=(props)=>{
@@ -195,19 +197,11 @@ useEffect(()=>{
 
           <p className={`${utilStyles.headingXl}`}>How should I start?</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae totam modi repudiandae quae ea quam, similique debitis aliquid asperiores dolorem sed nisi accusantium tenetur impedit eligendi temporibus, assumenda maiores perspiciatis?</p>
-
-
-
-
-
-
-      
       
       </div>
       {/* Testimony Section*/}
-      
-
-      <div className={`grid md:grid-cols-2 md:py-10 py-5 grid-cols-1 gap-4 ${proseStyles.testimony} m-auto`}>
+      <div className='bg-gradient-to-b from-white to-gray-500'>
+        <div className={`grid md:grid-cols-2 md:py-10 py-5 grid-cols-1 gap-4 ${proseStyles.testimony} m-auto text-gray-700`}>
       <p className={`${utilStyles.headingXl}`}>💜 from my students</p>
         <div className='flex flex-col justify-between h-full relative md:px-8 md:pb-8 pt-4 rounded-lg '>
           <section> 
@@ -257,26 +251,43 @@ useEffect(()=>{
           </footer>
           <div className='absolute top-4 left-4 font-serif text-4xl text-gray-300 leading-none'>“</div>
         </div>
-        <div className='flex flex-col justify-between h-full relative md:px-8 md:pb-8 pt-4 rounded-lg '>
-          <section> 
-            <p className='text-md leading-normal'>I was just about to start preparing the app we're working on for general availability, which includes solving a lot of performance issues. This workshop delivers knowledge that is applicable to the real world issues right away."</p>
-          </section>
-          <footer className='text-gray-600 text-xs leading-normal font-mono pt-2'>
-            <div className='flex items-center'>
-              <div className='flex-grow w-10 overflow-hidden rounded-full relative mr-3'>
-                <img src="/images/404.jpeg/" alt="" />
-              </div>
-              <div className='w-full'>
-               <span> Ruslan Shtyk about React Performance workshop</span>
-                </div>
-            </div>
-          </footer>
-          <div className='absolute top-4 left-4 font-serif text-4xl text-gray-300 leading-none'>“</div>
-        </div>
-      
-
+        
       </div>
+      </div>
+      {/*AboutMe Section */}
+      <div className={`w-full m-auto text-xl bg-gradient-to-b from-gray-500 to-gray-50 pb-10`}>
+        <div className="flex flex-col justify-center m-auto items-center ">
+          <div className="image-wrapper opacity-80">
+          <Image 
+          src='/images/thomas-lipke-kkXDhAUnxYI-unsplash.jpg' 
+          width={700} 
+          height={600}
+          alt="whales dive into the ocean" ></Image>
+          </div>
+          <p className={`${utilStyles.headingXl} w-4/6 pt-3`}>Hi I'm Yun, and I will be your private English coach. Let's dive into it!</p>
+          <p className='w-4/6 py-3'>I'm a full-stack JavaScript engineer. In the past, I've worked at PayPal, where I helped build products shipped to millions of users all over the globe. I also represented PayPal on the TC39. In addition to my job as a React developer, I created and maintain the most popular library on the internet to test your React applications. I'm a Google Developer Expert, and I've been teaching on egghead.io for six+ years. </p>
+     
 
+        </div>
+        
+        </div>
+      {/*Footer Section */}
+      <footer className='container text-center  text-gray-400 bg-gradient-to-b from-gray-50 to-white pb-10 '>
+        <div className='w-24 h-1 my-12 bg-gradient-to-r from-gray-300 to-gray-600 rounded-full mx-auto'></div>
+        <div className="flex justify-center items-center">
+          <i className='pr-2'>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+            </svg>
+          </i>
+            Need help? Email  <a href="mailto:this.jiyun@gmail.com" className='pl-1 hover:text-gray-800'>this.jiyun@gmail.com</a>
+        </div>
+        <div className="flex justify-center items-center my-2">
+          <a href="" className='font-bold hover:text-gray-800' >
+          Terms and Conditions
+          </a>
+        </div>
+      </footer>
 
     </Layout>
   )
