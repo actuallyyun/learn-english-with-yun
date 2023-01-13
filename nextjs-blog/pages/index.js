@@ -5,10 +5,14 @@ import bubbleStyles from '../styles/bubble.module.css'
 import {useState, useEffect} from 'react'
 import Arrow from '../components/arrow'
 import Stars from '../components/stars'
+import ScrollAreaHeartBeat from '../components/scrollHeartBeat'
 import proseStyles from '../styles/prose.module.css'
 import {Typewriter} from 'react-simple-typewriter'
 import Image from 'next/image'
 import Link from 'next/link'
+
+
+console.log(ScrollAreaHeartBeat)
 
 
 const Bubbles=(props)=>{
@@ -29,13 +33,12 @@ const Bubbles=(props)=>{
 }
 
 
-
 export default function Home({ allPostsData }) {
 const [hideBubbles,setHideBubbles]=useState(true)
 
 const listenToScroll=()=>{
   setHideBubbles(false)
-  const heightToHideFrom=1000
+  const heightToHideFrom=800
   const winScroll=document.body.scrollTop || document.documentElement.scrollTop
   if(winScroll>heightToHideFrom){
     setHideBubbles(true)
@@ -55,9 +58,9 @@ useEffect(()=>{
       </Head>
 
       <div className="relative">
-        <div className="pb-16">
+        <div className="">
           {/* Background image+ bubble*/}
-          <div className={`absolute top-0 bg-no-repeat bg-cover w-full lg:bg-fixed bg-scroll z-0  ${utilStyles.backGroundImage} bg-background` }>
+          <div className={`dark:brightness-75 absolute top-0 bg-no-repeat bg-cover w-full lg:bg-fixed bg-scroll z-0  ${utilStyles.backGroundImage} bg-background bg-blend-lighten` }>
             <Bubbles hideBubbles={hideBubbles}/>
           </div>
           {/* Intro section content*/}
@@ -83,56 +86,53 @@ useEffect(()=>{
         </div>
       </div>
       {/* Prose Section*/}
-      <div className={`${proseStyles.prose} mx-auto p-8 text-xl`}>
-        <p>We have all been there.</p>
-        <p>We feel our English is not good enough. We could not find the right word. We just made a grammar mistake. We used the wrong vocabulary. We worried about not making any sense.</p>
-        <p>We became self-conscious. Our cheeks began to flush, and we started panicking.</p>
-        <p className="pt-4 pb-6 text-red-500">
-          <Typewriter
-              words={['wrong','embarrsing','what am i doing here??',"i can't talk...",'..','...']}
-              loop={5}
-              cursor
-              cursorStyle='.'
-              typeSpeed={50}
-              deleteSpeed={50}
-              delaySpeed={1000}
-              
-            />
-          </p>
-        <p className='text-2xl animate-bounce pb-3'>We were stuck 😢</p>
+      {/*Underwater Section */}
+      <div className={`dark:brightness-75 bg-no-repeat bg-cover w-full bg-scroll bg-background ${utilStyles.backGroundImageUnderWater} `}>
+        <div className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end text-gray-600 dark:text-gray-800`}>
+          <p>We have all been there.</p>
+          <p>We feel our English is not good enough. We could not find the right word. We just made a grammar mistake. We used the wrong vocabulary. We worried about not making any sense.</p>
+          <p>We became self-conscious. Our cheeks began to flush, and we started panicking.</p>
+          <p className="pt-10 pb-10 md:pb-20 text-red-500">
+            <Typewriter
+                words={['wrong','embarrsing','what am i doing here??',"i can't talk...",'..','...']}
+                loop={6}
+                cursor
+                cursorStyle='.'
+                typeSpeed={50}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </p>
+            <p className='text-2xl animate-pulse pt-16 md:pt-20 text-gray-50'>We were stuck 😢</p>
+          </div>
+      </div>
+      {/*Heartbeat Section */}
+      <div className='bg-gray-100 pb-10 '>
+        <div className='flex flex-row items-center m-auto justify-center pt-20 animate-pulse' >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5" stroke="red" class="w-14 h-14">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+          </svg>
+        </div>
+        <ScrollAreaHeartBeat />
+      </div>
+      <div>
+
+      {/*Solution Section */}
 
 
 
-        <p>We thought we have to memorize more vocabulary, to correct our pronunciations, to 
-          eliminate all the grammatical errors. </p>
 
-        
-        <p className="pt-4 pb-6 text-red-500">
-          <Typewriter 
-            words={['my English is bad',"i'm not good at English"]}
-            loop={2}
-              cursor
-              cursorStyle='.'
-              typeSpeed={50}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
-        </p>
-        <p>Stories we tell ourselves.</p>
-        
-        <p className={`${utilStyles.headingXl}`}>You <span className='text-red-500 animate-pulse'>WON'T</span> learn if you don't believe you can learn</p>
+          <p> So that's it? I just have to change to a different mindset? </p>
+          <p>I wish it was that easy. The hard truth is that learning a language, any languge, is hard. Learning is hard and painful, and it is supposed to. 
+            That's also why we love it.</p>
+          <p>But for learning to happen, first you need to have the right mindset.</p>
 
-        <p> So that's it? I just have to change to a different mindset? </p>
-        <p>I wish it was that easy. The hard truth is that learning a language, any languge, is hard. Learning is hard and painful, and it is supposed to. 
-          That's also why we love it.</p>
-        <p>But for learning to happen, first you need to have the right mindset.</p>
+          <p className='text-2xl animate-bounce pb-3 pt-3'>ok,then what? 🧐</p>
 
-        <p className='text-2xl animate-bounce pb-3 pt-3'>ok,then what? 🧐</p>
+          <p > <span className='bg-red-200 text-2xl p-3'>Motivation</span></p>
 
-        <p > <span className='bg-red-200 text-2xl p-3'>Motivation</span></p>
-
-        <p>Find what motivates you and leverage it for your learning. </p>
-        <p>
+          <p>Find what motivates you and leverage it for your learning. </p>
+          <p>
           <Typewriter 
               words={['I enjoy watching English series.']}
               loop={2}
@@ -273,7 +273,7 @@ useEffect(()=>{
         </div>
 
       {/*Join Section */}
-      <div className="w-full bg-gray-100 h-80 flex items-center text-center">
+      <div className="w-full bg-gray-100 h-80 flex items-center text-center ">
         <div className='w-3/4 m-auto'>
           <p className={`${utilStyles.heading2Xl}`}>Join over 200 Learners and Get Really Good At English</p>
           <p className='text-purple-400'>The beautiful about learning is that nobody can take it away from you.</p>
