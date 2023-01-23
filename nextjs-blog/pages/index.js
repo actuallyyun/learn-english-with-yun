@@ -127,7 +127,9 @@ const showMotivation=(event)=>{
         <p className={`${utilStyles.heading2Xl}`}>Change your mindset </p>
         <p className={`${utilStyles.heading2Xl} text-purple-600`}>you can start learning now</p>
       </div>
+      <div className='w-9/12 m-auto'>
       <ToggleSolutions/>
+      </div>
      
 
 <br></br>
