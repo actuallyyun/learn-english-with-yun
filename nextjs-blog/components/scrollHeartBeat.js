@@ -3,7 +3,6 @@ import proseStyles from '../styles/prose.module.css'
 import {Typewriter} from 'react-simple-typewriter'
 import utilStyles from '../styles/utils.module.css'
 import React from 'react'
-import {createRoot} from 'react-dom/client'
 import {useInView} from 'react-intersection-observer'
 
 const ScrollWrapper=({children})=>{
@@ -23,7 +22,7 @@ const ScrollAreaHeartBeat=()=>{
 
     return (
         <ScrollWrapper>
-        <div ref={ref} className={`${proseStyles.prose} mx-auto p-8 text-xl pt-20 transition ease-in-out  duration-300 delay-300 -translate-y-1 ${inView? utilStyles.show:""} ${utilStyles.hidden}`} id='#scrollArea'>
+        <div ref={ref} className={`${proseStyles.prose} mx-auto p-8 text-xl pt-20 ${inView? utilStyles.show:""} ${utilStyles.hidden}`} id='#scrollArea'>
           <p>We thought we have to memorize more vocabulary, to correct our pronunciations, to 
             eliminate all the grammatical errors. </p>
           <p className="pt-8 pb-8 text-red-500 text-center">

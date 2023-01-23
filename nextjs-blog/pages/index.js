@@ -10,9 +10,7 @@ import proseStyles from '../styles/prose.module.css'
 import {Typewriter} from 'react-simple-typewriter'
 import Image from 'next/image'
 import Link from 'next/link'
-
-
-console.log(ScrollAreaHeartBeat)
+import ToggleSolutions from '../components/toggleSolutions'
 
 
 const Bubbles=(props)=>{
@@ -50,6 +48,10 @@ const listenToScroll=()=>{
 useEffect(()=>{
   window.addEventListener("scroll",listenToScroll)
 },[])
+
+const showMotivation=(event)=>{
+  console.log(event)
+}
 
   return (
     <Layout >
@@ -119,8 +121,22 @@ useEffect(()=>{
 
       {/*Solution Section */}
 
+      
+
+      <div className={`${proseStyles.prose} mx-auto p-8 pt-20 text-center`}>
+        <p className={`${utilStyles.heading2Xl}`}>Change your mindset </p>
+        <p className={`${utilStyles.heading2Xl} text-purple-600`}>you can start learning now</p>
+      </div>
+      <ToggleSolutions/>
+     
+
+<br></br>
 
 
+<br></br>
+
+
+<br></br>
 
           <p> So that's it? I just have to change to a different mindset? </p>
           <p>I wish it was that easy. The hard truth is that learning a language, any languge, is hard. Learning is hard and painful, and it is supposed to. 
