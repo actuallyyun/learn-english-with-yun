@@ -69,35 +69,49 @@ const Consistency=({showConsistency})=>{
 
 const ToggleSolutions=()=>{
     const [showMotivation,setShowMotivtion]=useState(true)
+    const [motivationIsClicked,setMotivationIsClicked]=useState(true)
     const [showMindful,setShowMindful]=useState(false)
+    const [mindfulIsClicked,setMindfulIsClicked]=useState(false)
     const [showConsistency,setShowConsistency]=useState(false)
+    const [consistencyIsClicked,setConsistencyIsClicked]=useState(false)
 
     const handleShowMotivation=(event)=>{
         setShowMotivtion(true)
         setShowMindful(false)
-        setShowConsistency(false)    
-        
+        setShowConsistency(false)
+            
+        setMotivationIsClicked(true)
+        setMindfulIsClicked(false)
+        setConsistencyIsClicked(false)
       }
     
     const handleShowMindful=(event)=>{
         setShowMindful(true)
         setShowMotivtion(false)
         setShowConsistency(false)
+
+        setMotivationIsClicked(false)
+        setMindfulIsClicked(true)
+        setConsistencyIsClicked(false)
     }
 
     const handleShowConsistency=()=>{
         setShowConsistency(true)
         setShowMindful(false)
         setShowMotivtion(false)
+
+        setMotivationIsClicked(false)
+        setMindfulIsClicked(false)
+        setConsistencyIsClicked(true)
     }
 
 
     return (
         <>
          <div className='flex flex-row m-auto w-3/4 justify-center text-2xl pb-10'>
-            <button className={`${utilStyles.underlineButton} mr-6`} onClick={handleShowMotivation}>Motivation</button>
-            <button className={`${utilStyles.underlineButton} mr-6`} onClick={handleShowMindful}>Mindful Practice</button>
-            <button className={`${utilStyles.underlineButton} mr-6`}  onClick={handleShowConsistency}>Consistency</button>
+            <button className={`${motivationIsClicked? (utilStyles.underlineButton):(utilStyles.noBorderButton)} mr-6`} onClick={handleShowMotivation}>Motivation</button>
+            <button className={`${mindfulIsClicked? (utilStyles.underlineButton):(utilStyles.noBorderButton)} mr-6`} onClick={handleShowMindful}>Mindful Practice</button>
+            <button className={`${consistencyIsClicked? (utilStyles.underlineButton):(utilStyles.noBorderButton)} mr-6`}  onClick={handleShowConsistency}>Consistency</button>
           </div>
       
        

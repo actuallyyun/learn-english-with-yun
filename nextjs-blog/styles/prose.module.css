@@ -1,6 +1,9 @@
 .prose{
     max-width: 700px;
-    
+}
+
+.proseXl{
+    max-width: 900px;
 }
 
 .prose >p{
