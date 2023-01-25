@@ -210,19 +210,8 @@ export default function Home({ allPostsData }) {
       {/*Join Section */}
       <Join />
 
-      <div className="w-full bg-gray-100 h-80 flex items-center text-center ">
-        <div className="w-3/4 m-auto">
-          <p className={`${utilStyles.heading2Xl}`}>
-            Join over 200 Learners and Get Really Good At English
-          </p>
-          <p className="text-purple-400">
-            The beautiful about learning is that nobody can take it away from
-            you.
-          </p>
-        </div>
-      </div>
       {/*Footer Section */}
-      <footer className="container text-center  text-gray-400 bg-gradient-to-b from-gray-50 to-white pb-10 ">
+      <footer className="container text-center pb-10 ">
         <div className="w-24 h-1 my-12 bg-gradient-to-r from-gray-300 to-gray-600 rounded-full mx-auto"></div>
         <div className="flex justify-center items-center">
           <i className="pr-2">
