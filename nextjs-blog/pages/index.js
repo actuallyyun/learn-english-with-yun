@@ -15,6 +15,8 @@ import Quote from "../components/quote";
 import NewMethods from "../components/newMethods";
 import GeeMehthods from "../components/geeMethods";
 import Testimony from "../components/testimony";
+import MeetCoach from "../components/meetCoach";
+import Join from "../components/join";
 
 const Bubbles = (props) => {
   return (
@@ -199,38 +201,15 @@ export default function Home({ allPostsData }) {
 
         <br></br>
       </div>
+
+      {/*AboutMe Section */}
+      <MeetCoach />
       {/* Testimony Section*/}
       <Testimony />
-      {/*AboutMe Section */}
-      <div
-        className={`w-full m-auto text-xl bg-gradient-to-b from-gray-500 to-gray-50 pb-10`}
-      >
-        <div className="flex flex-col justify-center m-auto items-center ">
-          <div className="image-wrapper opacity-80">
-            <Image
-              src="/images/thomas-lipke-kkXDhAUnxYI-unsplash.jpg"
-              width={700}
-              height={600}
-              alt="whales dive into the ocean"
-            ></Image>
-          </div>
-          <p className={`${utilStyles.headingXl} w-4/6 pt-3`}>
-            Hi I'm Yun, and I will be your private English coach. Let's dive
-            into it!
-          </p>
-          <p className="w-4/6 py-3">
-            I'm a full-stack JavaScript engineer. In the past, I've worked at
-            PayPal, where I helped build products shipped to millions of users
-            all over the globe. I also represented PayPal on the TC39. In
-            addition to my job as a React developer, I created and maintain the
-            most popular library on the internet to test your React
-            applications. I'm a Google Developer Expert, and I've been teaching
-            on egghead.io for six+ years.{" "}
-          </p>
-        </div>
-      </div>
 
       {/*Join Section */}
+      <Join />
+
       <div className="w-full bg-gray-100 h-80 flex items-center text-center ">
         <div className="w-3/4 m-auto">
           <p className={`${utilStyles.heading2Xl}`}>
