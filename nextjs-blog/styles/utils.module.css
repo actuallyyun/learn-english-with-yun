@@ -78,6 +78,16 @@
   background-image: url("/images/pramod-tiwari-R3hAIwBFkeg-unsplash.jpg");
 }
 
+@media (min-width: 640px) {
+  .backGroundImageBlackRadient {
+    background-image: url("/images/pramod-tiwari-48vYtKHa0EA-unsplash.jpg");
+  }
+}
+
+.backGroundImageSky {
+  background-image: url("/images/bernd-dittrich-953PTEbx2Jg-unsplash.jpg");
+}
+
 .hidden {
   opacity: 0;
   filter: blur(5px);

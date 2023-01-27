@@ -1,15 +1,17 @@
-.prose{
-    max-width: 700px;
+.prose {
+  max-width: 700px;
 }
 
-.proseXl{
-    max-width: 900px;
+.proseXl {
+  max-width: 900px;
 }
 
-.prose >p{
-    margin-bottom: 1.2rem;
+.prose > p {
+  margin-bottom: 1.2rem;
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.testimony{
-    max-width: 765px;
+.testimony {
+  max-width: 765px;
 }
