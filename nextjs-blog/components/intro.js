@@ -5,7 +5,7 @@ import Arrow from "../components/arrow";
 const Intro = () => {
   return (
     <div>
-      <div className="mx-3">
+      <div>
         <div
           className={`dark:brightness-75 bg-no-repeat bg-cover w-full
              ${utilStyles.backGroundImage} bg-background rounded-md`}

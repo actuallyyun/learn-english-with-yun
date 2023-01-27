@@ -4,7 +4,7 @@ import proseStyles from "../styles/prose.module.css";
 const Testimony = () => {
   return (
     <div>
-      <div className="px-5">
+      <div className="px-5  pt-6 md:pt-10">
         <p className={`text-center ${utilStyles.heading2Xl}`}>
           Loved by hundreds of English learners{" "}
         </p>

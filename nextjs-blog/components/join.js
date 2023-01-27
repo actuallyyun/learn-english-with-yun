@@ -4,7 +4,7 @@ const Join = () => {
   return (
     <div>
       <div
-        class={`mx-2 ${utilStyles.backGroundImagePinkPattern} bg-no-repeat bg-cover	`}
+        class={`rounded-lg ${utilStyles.backGroundImagePinkPattern} bg-no-repeat bg-cover	`}
       >
         <div class="m-auto grid w-3/4 justify-center py-20 text-center">
           <div class="text-white">

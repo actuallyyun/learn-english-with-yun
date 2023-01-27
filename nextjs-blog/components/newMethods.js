@@ -15,7 +15,7 @@ const Prose = () => {
 const List = () => {
   return (
     <div class="grid grid-cols-2 justify-items-start md:grid-cols-4">
-      <div class="m-auto max-w-xl md:max-w-4xl">
+      <div class="m-auto md:max-w-4xl ">
         <ul>
           <li class="flex flex-row justify-start pb-3">
             <span class="mr-3 flex flex-col justify-center">

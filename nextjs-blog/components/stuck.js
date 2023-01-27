@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const Stuck = () => {
   return (
-    <div className="mx-3 grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
       <div
         className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end text-gray-600 dark:text-gray-800`}
       >
@@ -41,9 +41,7 @@ const Stuck = () => {
         className={`dark:brightness-75 bg-no-repeat bg-cover w-full bg-background ${utilStyles.backGroundImageStuckPattern} rounded-lg flex flex-col justify-center`}
       >
         <div className="text-center">
-          <p className="text-2xl animate-pulse text-gray-50">
-            We were stuck 😢
-          </p>
+          <p className="text-2xl  text-gray-50">We were stuck 😢</p>
         </div>
       </div>
     </div>

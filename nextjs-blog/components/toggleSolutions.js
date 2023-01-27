@@ -9,7 +9,6 @@ const Motivation = ({ showMotivation }) => {
     >
       <div>
         <p className={`md:${utilStyles.heading2Xl} ${utilStyles.headingXl} `}>
-          {" "}
           So that's it? I just have to change to a different mindset?{" "}
         </p>
         <p>

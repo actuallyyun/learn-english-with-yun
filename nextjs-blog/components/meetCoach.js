@@ -4,7 +4,7 @@ import Image from "next/image";
 const MeetCoach = () => {
   return (
     <div>
-      <div class="mx-2 bg-violet-900">
+      <div class=" bg-violet-900 rounded-lg">
         <div class="mx-6 py-7 md:mx-12 lg:ml-20 md:py-11 max-w-4xl">
           <div class="w-3/4 pb-11 md:pb-20 text-slate-50">
             <p class={`${utilStyles.heading2Xl}`}>
