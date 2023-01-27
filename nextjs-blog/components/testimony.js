@@ -4,7 +4,7 @@ import proseStyles from "../styles/prose.module.css";
 const Testimony = () => {
   return (
     <div>
-      <div className="">
+      <div className="px-5">
         <p className={`text-center ${utilStyles.heading2Xl}`}>
           Loved by hundreds of English learners{" "}
         </p>
@@ -32,7 +32,7 @@ const Testimony = () => {
                 </div>
               </div>
             </footer>
-            <div className="absolute top-4 left-4 font-serif text-4xl text-gray-300 leading-none">
+            <div className="absolute top-1 left-0 md:top-4 md:left-4 font-serif text-4xl text-gray-300 leading-none">
               “
             </div>
           </div>
@@ -56,7 +56,7 @@ const Testimony = () => {
                 </div>
               </div>
             </footer>
-            <div className="absolute top-4 left-4 font-serif text-4xl text-gray-300 leading-none">
+            <div className="absolute top-1 left-0 md:top-4 md:left-4 font-serif text-4xl text-gray-300 leading-none">
               “
             </div>
           </div>
@@ -82,7 +82,7 @@ const Testimony = () => {
                 </div>
               </div>
             </footer>
-            <div className="absolute top-4 left-4 font-serif text-4xl text-gray-300 leading-none">
+            <div className="absolute top-1 left-0 md:top-4 md:left-4 font-serif text-4xl text-gray-300 leading-none">
               “
             </div>
           </div>
@@ -107,7 +107,7 @@ const Testimony = () => {
                 </div>
               </div>
             </footer>
-            <div className="absolute top-4 left-4 font-serif text-4xl text-gray-300 leading-none">
+            <div className="absolute top-1 left-0 md:top-4 md:left-4 font-serif text-4xl text-gray-300 leading-none">
               “
             </div>
           </div>

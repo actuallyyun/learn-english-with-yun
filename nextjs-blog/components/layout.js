@@ -1,53 +1,45 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import styles from './layout.module.css'
-import Nav from '../components/nav'
-import {useState} from 'react'
+import Head from "next/head";
+import Image from "next/image";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import styles from "./layout.module.css";
+import Nav from "../components/nav";
+import { useState } from "react";
 
-
-const name = 'Yun Ji'
-export const siteTitle = 'Learn English With Yun'
-
+const name = "Yun Ji";
+export const siteTitle = "Learn English With Yun";
 
 export default function Layout({ children }) {
+  const [darkMode, setDarkMode] = useState(false);
 
-   const [darkMode, setDarkMode]=useState(false)
+  const handleDarkModeChange = (darkMode) => {
+    setDarkMode((darkMode) => !darkMode);
+  };
 
-   const handleDarkModeChange=(darkMode)=>{
+  return (
+    <div
+      className={`${styles.container} ${darkMode ? "dark" : ""} dark:bg-black`}
+    >
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Learn how to build a personal website using Next.js"
+        />
+        <meta
+          property="og:image"
+          content={`https://og-image.vercel.app/${encodeURI(
+            siteTitle
+          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+        />
+        <meta name="og:title" content={siteTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
 
-    setDarkMode(darkMode=>!darkMode)
-
-   }
-
-    return (
-
-        <div className={`${styles.container} ${darkMode? 'dark':''}`} >
-            <Head>
-                <link rel="icon" href="/favicon.ico" />
-                <meta
-                    name="description"
-                    content="Learn how to build a personal website using Next.js"
-                />
-                <meta
-                    property="og:image"
-                    content={`https://og-image.vercel.app/${encodeURI(
-                        siteTitle,
-                    )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
-                />
-                <meta name="og:title" content={siteTitle} />
-                <meta name="twitter:card" content="summary_large_image" />
-            </Head>
-           
-            <header className='relative z-50 w-full flex-none bg-white dark:bg-black'>
-            <Nav darkMode={darkMode} handleDarkModeChange={handleDarkModeChange}/>
-            </header>
-         
-                {children}
-                
-
-        </div>
-
-    )
+      <header className="relative z-50 w-full flex-none bg-white dark:bg-slate-800">
+        <Nav darkMode={darkMode} handleDarkModeChange={handleDarkModeChange} />
+      </header>
+      <body className="dark:bg-slate-800 ">{children}</body>
+    </div>
+  );
 }

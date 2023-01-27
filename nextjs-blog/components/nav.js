@@ -1,54 +1,78 @@
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-
+import { Fragment } from "react";
+import { Disclosure, Menu, Transition } from "@headlessui/react";
+import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Articles', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'FAQ', href: '#', current: false },
-]
+  { name: "Home", href: "#", current: true },
+  { name: "Articles", href: "#", current: false },
+  { name: "Projects", href: "#", current: false },
+  { name: "FAQ", href: "#", current: false },
+];
 
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+  return classes.filter(Boolean).join(" ");
 }
 
-const DarkModeToogle=(props)=>{
-    return (
-        <button onClick={props.handleDarkModeChange} className='pl-3 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-150 '>
-            
-            {props.darkMode ? (<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 dark:fill-white dark:text-white">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-</svg>
-):(<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
-</svg>
-)
-            }                 
-            </button>
-    )
-}
+const DarkModeToogle = (props) => {
+  return (
+    <button
+      onClick={props.handleDarkModeChange}
+      className="pl-3 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-150 "
+    >
+      {props.darkMode ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 dark:fill-white dark:text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+          />
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          />
+        </svg>
+      )}
+    </button>
+  );
+};
 
-const BookClassButton=()=>{
-    return (
-        <button
-                  type="button"
-                  className="transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 rounded-md pb-2 pt-2 bg-purple-700 px-3 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 dark:bg-white dark:text-black 
+const BookClassButton = () => {
+  return (
+    <button
+      type="button"
+      className="transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 rounded-md pb-2 pt-2 bg-purple-700 px-3 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 dark:bg-white dark:text-black 
                   dark:hover:bg-purple-700 dark:hover:text-white"
-                >
-                  <span className="px-1 sr-only">Book A Trial Lesson</span>
-                Start Now
-                </button>
-    )
-}
+    >
+      <span className="px-1 sr-only">Book A Trial Lesson</span>
+      Start Now
+    </button>
+  );
+};
 
 export default function Nav(props) {
   return (
-    <Disclosure as="nav" >
+    <Disclosure as="nav">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 bg-white dark:bg-black" >
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 bg-white dark:bg-black fix">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -64,40 +88,47 @@ export default function Nav(props) {
 
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                <img
+                  <img
                     className="h-8 w-auto lg:block"
                     src="/images/octopus-svgrepo-com.svg"
                     alt="Your Company"
                   />
-                  <div >
-                    <div className='flex text-gray-900 dark:text-white font-bold'>GoodEnough English</div>
-                    <div className='dark:text-slate-50 text-gray-900 font-light text-xs text-right'>with Yun Ji</div>
+                  <div>
+                    <div className="flex text-gray-900 dark:text-white font-bold">
+                      GoodEnough English
+                    </div>
+                    <div className="dark:text-slate-50 text-gray-900 font-light text-xs text-right">
+                      with Yun Ji
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 bg-purple-700 text-slate-50 dark:text-white ' : 'transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 text-gray-900 hover:text-purple-700 hover:drop-shadow dark:text-white' ,
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
-                  </div>
+                <div className="flex space-x-4">
+                  {navigation.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className={classNames(
+                        item.current
+                          ? "transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 bg-purple-700 text-slate-50 dark:text-white "
+                          : "transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 text-gray-900 hover:text-purple-700 hover:drop-shadow dark:text-white",
+                        "px-3 py-2 rounded-md text-sm font-medium"
+                      )}
+                      aria-current={item.current ? "page" : undefined}
+                    >
+                      {item.name}
+                    </a>
+                  ))}
                 </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-             
-             <BookClassButton/>
-
               </div>
-              <DarkModeToogle  handleDarkModeChange={props.handleDarkModeChange} darkMode={props.darkMode}/>
+              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <BookClassButton />
+              </div>
+              <DarkModeToogle
+                handleDarkModeChange={props.handleDarkModeChange}
+                darkMode={props.darkMode}
+              />
             </div>
           </div>
 
@@ -109,10 +140,12 @@ export default function Nav(props) {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
+                    item.current
+                      ? "bg-gray-900 text-white"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                    "block px-3 py-2 rounded-md text-base font-medium"
                   )}
-                  aria-current={item.current ? 'page' : undefined}
+                  aria-current={item.current ? "page" : undefined}
                 >
                   {item.name}
                 </Disclosure.Button>
@@ -122,5 +155,5 @@ export default function Nav(props) {
         </>
       )}
     </Disclosure>
-  )
+  );
 }

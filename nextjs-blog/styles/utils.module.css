@@ -1,6 +1,6 @@
 .heading2Xl {
-  font-size: 2.5rem;
-  line-height: 60px;
+  font-size: 42px;
+  line-height: 54px;
   font-weight: 700;
   letter-spacing: -0.05rem;
   margin: 1rem 0;
@@ -58,7 +58,6 @@
 
 .backGroundImage {
   background-image: url("/images/background-image-home.jpg");
-  background-position: 50% top;
   height: 560px;
 }
 
@@ -70,9 +69,13 @@
   min-height: 176px;
 }
 
-.backGroundImageUnderWater {
-  background-image: url("/images/daniel-sinoca-AANCLsb0sU0-unsplash.jpg");
+.backGroundImageStuckPattern {
+  background-image: url("/images/susan-gold-SEJq_Dx358U-unsplash.jpg");
   height: 560px;
+}
+
+.backGroundImagePinkPattern {
+  background-image: url("/images/pramod-tiwari-R3hAIwBFkeg-unsplash.jpg");
 }
 
 .hidden {
