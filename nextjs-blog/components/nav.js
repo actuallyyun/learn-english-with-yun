@@ -4,9 +4,8 @@ import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "#", current: true },
-  { name: "Articles", href: "#", current: false },
-  { name: "Projects", href: "#", current: false },
-  { name: "FAQ", href: "#", current: false },
+  { name: "Articles", href: "##", current: false },
+  { name: "FAQ", href: "##", current: false },
 ];
 
 function classNames(...classes) {
@@ -58,8 +57,8 @@ const BookClassButton = () => {
   return (
     <button
       type="button"
-      className="transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 rounded-md pb-2 pt-2 bg-purple-700 px-3 text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 dark:bg-white dark:text-black 
-                  dark:hover:bg-purple-700 dark:hover:text-white"
+      className="transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 rounded-md pb-2 pt-2 bg-purple-100 px-3 text-purple-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 dark:bg-white dark:text-black 
+                  dark:hover:bg-purple-400 dark:hover:text-white"
     >
       <span className="px-1 sr-only">Book A Trial Lesson</span>
       Start Now
@@ -88,16 +87,11 @@ export default function Nav(props) {
 
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
-                  <img
-                    className="h-8 w-auto lg:block"
-                    src="/images/octopus-svgrepo-com.svg"
-                    alt="Your Company"
-                  />
                   <div>
-                    <div className="flex text-gray-900 dark:text-white font-bold">
-                      GoodEnough English
+                    <div className="flex text-purple-700 dark:text-white font-bold">
+                      <a href="#">GoodEnough English</a>
                     </div>
-                    <div className="dark:text-slate-50 text-gray-900 font-light text-xs text-right">
+                    <div className="dark:text-slate-50 text-gray-900 font-light text-xs text-center sm:text-right">
                       with Yun Ji
                     </div>
                   </div>
@@ -111,8 +105,8 @@ export default function Nav(props) {
                       href={item.href}
                       className={classNames(
                         item.current
-                          ? "transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 bg-purple-700 text-slate-50 dark:text-white "
-                          : "transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 text-gray-900 hover:text-purple-700 hover:drop-shadow dark:text-white",
+                          ? "transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110  text-black underline underline-offset-8 dark:text-white "
+                          : "transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 text-gray-500 hover:text-purple-700 hover:drop-shadow dark:text-white",
                         "px-3 py-2 rounded-md text-sm font-medium"
                       )}
                       aria-current={item.current ? "page" : undefined}
@@ -122,7 +116,7 @@ export default function Nav(props) {
                   ))}
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <BookClassButton />
               </div>
               <DarkModeToogle
