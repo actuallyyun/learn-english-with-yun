@@ -18,6 +18,10 @@ import Testimony from "../components/testimony";
 import MeetCoach from "../components/meetCoach";
 import Join from "../components/join";
 import Footer from "../components/footer";
+import Intro from "../components/intro";
+import Stuck from "../components/stuck";
+import Heartbeat from "../components/heartBeat";
+import TakeOff from "../components/takeOff";
 
 const Bubbles = (props) => {
   return (
@@ -68,107 +72,16 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-
-      <div className="relative">
-        <div className="">
-          {/* Background image+ bubble*/}
-          <div
-            className={`dark:brightness-75 absolute top-0 bg-no-repeat bg-cover w-full lg:bg-fixed bg-scroll z-0  ${utilStyles.backGroundImage} bg-background bg-blend-lighten`}
-          >
-            <Bubbles hideBubbles={hideBubbles} />
-          </div>
-          {/* Intro section content*/}
-          <div
-            className={`relative flex flex-col items-center justify-center text-center pt-8 ${utilStyles.introSectionHeight}`}
-          >
-            <div className="h-full sm:pt-20 pt-10 flex flex-col items-center justify-center">
-              {/* Intro title and starts*/}
-              <div>
-                <div className="inline-flex">
-                  <Stars />
-                </div>
-                <div className={`block ${utilStyles.introTextHeight}`}>
-                  <h1
-                    className={`font-semibold text-2xl text-white pt-8 px-5 md:max-w-3xl lg:text-4xl sm:pt-0 ${utilStyles.heading2Xl}`}
-                  >
-                    Your English is Great. <br></br>Use English With Confidence{" "}
-                    <br></br>Right Now
-                  </h1>
-                </div>
-              </div>
-              {/* Intro arrow*/}
-              <div className="flex items-center justify-center w-full h-full">
-                <Arrow />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* Prose Section*/}
-      {/*Underwater Section */}
-      <div
-        className={`dark:brightness-75 bg-no-repeat bg-cover w-full bg-scroll bg-background ${utilStyles.backGroundImageUnderWater} `}
-      >
-        <div
-          className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end text-gray-600 dark:text-gray-800`}
-        >
-          <p>We have all been there.</p>
-          <p>
-            We feel our English is not good enough. We could not find the right
-            word. We just made a grammar mistake. We used the wrong vocabulary.
-            We worried about not making any sense.
-          </p>
-          <p>
-            We became self-conscious. Our cheeks began to flush, and we started
-            panicking.
-          </p>
-          <p className="pt-10 pb-10 md:pb-20 text-red-500">
-            <Typewriter
-              words={[
-                "wrong",
-                "embarrsing",
-                "what am i doing here??",
-                "i can't talk...",
-                "..",
-                "...",
-              ]}
-              loop={6}
-              cursor
-              cursorStyle="."
-              typeSpeed={50}
-              deleteSpeed={50}
-              delaySpeed={1000}
-            />
-          </p>
-          <p className="text-2xl animate-pulse pt-16 md:pt-20 text-gray-50">
-            We were stuck 😢
-          </p>
-        </div>
-      </div>
-      {/*Heartbeat Section */}
-      <div className="bg-sky-100 mx-3 md:mx-5 rounded-r-md mt-7">
-        <div className="flex flex-row items-center m-auto justify-center pt-20 animate-pulse">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="red"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="red"
-            class="w-14 h-14"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-            />
-          </svg>
+      <div className="md:mx-5 mx-3">
+        <Intro />
+        <Bubbles hideBubbles={hideBubbles} />
+        <Stuck />
+        <div className="flex justify-center pt-10">
+          <Heartbeat />
         </div>
         <ScrollAreaHeartBeat />
-      </div>
-      <div>
-        {/*Solution Section */}
 
-        <div className={`${proseStyles.prose} mx-auto p-8 pt-20 text-center`}>
+        <div className={` mx-auto p-8 pt-20 text-center`}>
           <p className={`${utilStyles.heading2Xl}`}>Change your mindset </p>
           <p className={`${utilStyles.heading2Xl} text-purple-600`}>
             you can start learning now
@@ -196,21 +109,16 @@ export default function Home({ allPostsData }) {
           <GeeMehthods />
         </div>
 
-        <br></br>
+        <TakeOff />
 
-        <br></br>
+        {/*AboutMe Section */}
+        <MeetCoach />
+        {/* Testimony Section*/}
+        <Testimony />
 
-        <br></br>
+        {/*Join Section */}
+        <Join />
       </div>
-
-      {/*AboutMe Section */}
-      <MeetCoach />
-      {/* Testimony Section*/}
-      <Testimony />
-
-      {/*Join Section */}
-      <Join />
-
       {/*Footer Section */}
       <Footer />
     </Layout>
