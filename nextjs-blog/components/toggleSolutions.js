@@ -47,8 +47,8 @@ const Mindful = ({ showMindful }) => {
       </div>
       <div className="flex justify-end grow-0">
         <Image
-          src="/images/tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg"
-          alt="picture says love to learn"
+          src="/images/katerina-may-6CLBoiWuzSU-unsplash.jpg"
+          alt="mindful practice"
           width={500}
           height={350}
           className={"mt-4"}
@@ -75,8 +75,8 @@ const Consistency = ({ showConsistency }) => {
       </div>
       <div className="flex justify-end grow-0">
         <Image
-          src="/images/tim-mossholder-WE_Kv_ZB1l0-unsplash.jpg"
-          alt="picture says love to learn"
+          src="/images/aaron-burden-QJDzYT_K8Xg-unsplash.jpg"
+          alt="consistency is key"
           width={500}
           height={350}
           className={"mt-4"}

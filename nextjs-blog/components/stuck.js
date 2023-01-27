@@ -6,7 +6,7 @@ const Stuck = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 pt-9">
       <div
-        className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end text-gray-600 dark:text-gray-800`}
+        className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end  dark:text-gray-800`}
       >
         <p>We have all been there.</p>
         <p>

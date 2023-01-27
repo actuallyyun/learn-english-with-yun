@@ -22,7 +22,7 @@ const ScrollAreaHeartBeat = () => {
           className={`${inView ? utilStyles.show : ""} ${utilStyles.hidden}`}
           id="#scrollArea"
         >
-          <div className="w-3/4 m-auto text-black sm:text-slate-50">
+          <div className="w-3/4 m-auto  sm:text-slate-50">
             <p className={`${utilStyles.heading2Xl} pb-5`}>
               Our English is not good enough
             </p>

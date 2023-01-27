@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: ui-sans-serif, system-ui, "Roboto", "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji";
+  color: rgb(31 41 55);
 }
 
 .header {
