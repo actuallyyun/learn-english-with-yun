@@ -18,7 +18,7 @@ const Stuck = () => {
           We became self-conscious. Our cheeks began to flush, and we started
           panicking.
         </p>
-        <p className="pt-10 pb-10 md:pb-20 text-purple-600">
+        {/* <p className="pt-10 pb-10 md:pb-20 text-purple-600">
           <Typewriter
             words={[
               "wrong",
@@ -35,7 +35,7 @@ const Stuck = () => {
             deleteSpeed={50}
             delaySpeed={1000}
           />
-        </p>
+        </p> */}
       </div>
       <div
         className={`dark:brightness-75 bg-no-repeat bg-cover w-full bg-background ${utilStyles.backGroundImageStuckPattern} rounded-lg flex flex-col justify-center`}

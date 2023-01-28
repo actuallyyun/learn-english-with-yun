@@ -12,9 +12,11 @@ const Join = () => {
               <h1 class={`${utilStyles.heading2Xl}`}>Ready to get started?</h1>
             </div>
             <button class="mb-8 h-10 rounded-md bg-white">
-              <span class="px-6 py-4 text-lg font-semibold text-pink-400">
-                Book a trial lesson
-              </span>
+              <a href="https://calendly.com/this-jiyun/english-class?month=2023-01">
+                <span class="px-6 py-4 text-lg font-semibold text-pink-400">
+                  Book a trial lesson
+                </span>
+              </a>
             </button>
             <p class="text-lg font-semibold">
               The beautiful about learning is that nobody can take it away from

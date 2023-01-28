@@ -9,7 +9,7 @@ const Motivation = ({ showMotivation }) => {
     >
       <div>
         <p className={`md:${utilStyles.heading2Xl} ${utilStyles.headingXl} `}>
-          So that's it? I just have to change to a different mindset?{" "}
+          Find what motivates you and leverage it for your learning.
         </p>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
@@ -35,14 +35,16 @@ const Mindful = ({ showMindful }) => {
     <div className={`${showMindful ? "" : "hidden"} grid md:grid-cols-2 gap-7`}>
       <div>
         <p className={`md:${utilStyles.heading2Xl} ${utilStyles.headingXl}`}>
-          {" "}
           Learning a languge needs A LOT OF practice.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-          soluta vero distinctio eligendi. Consequuntur autem excepturi maxime,
-          repudiandae quisquam perferendis quam eveniet ut non voluptatibus
-          labore molestias. Officia, iste molestiae.
+          However, not all practice is created equal. To optimize learning, we
+          need to be alert, focused, and aware of what we are learning.{" "}
+        </p>
+        <p>
+          What does this mean? Have your tried to learn English by watching TV
+          series but never felt that you have made progress? Well your learning
+          pratice is perhaps not mindful enough.
         </p>
       </div>
       <div className="flex justify-end grow-0">
@@ -67,10 +69,14 @@ const Consistency = ({ showConsistency }) => {
           Getting better at anything takes a long time
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-          soluta vero distinctio eligendi. Consequuntur autem excepturi maxime,
-          repudiandae quisquam perferendis quam eveniet ut non voluptatibus
-          labore molestias. Officia, iste molestiae.
+          Never mind the 10,000 hours law. Getting better at anything takes a
+          long time, let alone a complex skill such as acquiring a new language.
+        </p>
+
+        <p>Learning English needs to be a part of your life.</p>
+        <p>
+          You are not going to get noticeablely better next week, even the next
+          month. But if you learn consistently, you will see progress.{" "}
         </p>
       </div>
       <div className="flex justify-end grow-0">

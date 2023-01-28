@@ -3,7 +3,7 @@ import utilStyles from "../styles/utils.module.css";
 const GeeMehthods = () => {
   return (
     <div>
-      <div class=" mt-4 rounded-md bg-sky-100 ">
+      <div class="  md:mt-10 mt-4 rounded-md bg-sky-100 ">
         <div class="m-auto max-w-sm py-10 md:max-w-2xl ">
           <div className="pb-10">
             <p className={`${utilStyles.heading2Xl} text-center`}>
