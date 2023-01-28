@@ -21,6 +21,7 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
+
       <div className="md:mx-5 mx-3">
         <Intro />
         <Stuck />
@@ -39,7 +40,6 @@ export default function Home({ allPostsData }) {
           <ToggleSolutions />
         </div>
 
-        {/*GGE Section */}
         <div className={`max-w-2xl md:max-w-4xl mx-auto pt-20 text-center`}>
           <p className={`${utilStyles.heading2Xl}`}>
             Insanity is doing the same thing over and over and expecting
@@ -59,15 +59,13 @@ export default function Home({ allPostsData }) {
 
         <TakeOff />
 
-        {/*AboutMe Section */}
         <MeetCoach />
-        {/* Testimony Section*/}
+
         <Testimony />
 
-        {/*Join Section */}
         <Join />
       </div>
-      {/*Footer Section */}
+
       <Footer />
     </Layout>
   );

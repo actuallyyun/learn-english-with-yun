@@ -20,7 +20,6 @@ export default function Layout({ children }) {
       className={`${styles.container} ${darkMode ? "dark" : ""} dark:bg-black`}
     >
       <Head>
-        <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -38,7 +37,7 @@ export default function Layout({ children }) {
       <header className="relative z-50 w-full flex-none bg-white dark:bg-slate-800">
         <Nav darkMode={darkMode} handleDarkModeChange={handleDarkModeChange} />
       </header>
-      <body className="dark:bg-slate-800 ">{children}</body>
+      <div>{children}</div>
     </div>
   );
 }
