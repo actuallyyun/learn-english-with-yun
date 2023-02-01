@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply text-2xl;
+    @apply my-3;
+  }
+  p {
+    @apply my-2;
+  }
+  code {
+    @apply font-mono;
+    @apply bg-slate-200;
+    @apply text-slate-500;
+    @apply rounded-md;
+    @apply p-1;
+    @apply text-sm;
+  }
+  img {
+    @apply rounded-lg;
+  }
+}
