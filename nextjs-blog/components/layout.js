@@ -37,7 +37,7 @@ export default function Layout({ children }) {
       <header className="relative z-50 w-full flex-none bg-white dark:bg-slate-800">
         <Nav darkMode={darkMode} handleDarkModeChange={handleDarkModeChange} />
       </header>
-      <div className="dark:bg-slate-900  dark:text-slate-50">{children}</div>
+      {children}
     </div>
   );
 }
