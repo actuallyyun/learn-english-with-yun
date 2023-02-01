@@ -27,7 +27,7 @@ export default function Articles({ allPostsData }) {
             <ul className={utilStyles.list}>
               {allPostsData.map(({ id, date, author, title, preview }) => (
                 <li className={`utilStyles.listItem pb-5`} key={id}>
-                  <Link href={`/posts/${id}`}>{title}</Link>
+                  <Link href={`/articles/${id}`}>{title}</Link>
                   <p className="py-2 text-base">By {author}</p>
 
                   <p className="text-base">{preview}</p>
