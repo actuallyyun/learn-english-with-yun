@@ -3,7 +3,7 @@ import utilStyles from "../styles/utils.module.css";
 const Prose = () => {
   return (
     <div class="pb-14 md:pb-24 max-w-4xl m-auto px-3">
-      <p class="text-xl font-light text-slate-800 ">
+      <p class="text-xl font-light text-slate-800 dark:text-slate-50">
         If what you have tried has not worked, you might want to try a different
         method. Ever so often when we feel we can't learn, the problem lies in
         the method.

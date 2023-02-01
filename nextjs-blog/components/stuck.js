@@ -20,7 +20,7 @@ const Stuck = () => {
           id="#scrollArea"
         >
           <div
-            className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end  dark:text-gray-800`}
+            className={`${proseStyles.prose} mx-auto p-8 text-xl flex flex-col justify-end  dark:text-slate-50`}
           >
             <p>We have all been there.</p>
             <p>

@@ -31,7 +31,9 @@ export default function Home({ allPostsData }) {
         <NotEnough />
 
         <div className={` mx-auto p-8 pt-20 text-center`}>
-          <p className={`${utilStyles.heading2Xl}`}>Change your mindset </p>
+          <p className={`${utilStyles.heading2Xl} dark:text-slate-50`}>
+            Change your mindset
+          </p>
           <p className={`${utilStyles.heading2Xl} text-purple-600`}>
             you can start learning now
           </p>

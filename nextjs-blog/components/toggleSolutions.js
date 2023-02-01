@@ -130,14 +130,14 @@ const ToggleSolutions = () => {
   };
 
   return (
-    <>
+    <div className="dark:text-slate-50">
       <div className="flex flex-row m-auto w-3/4 justify-center text-2xl pb-10">
         <button
           className={`${
             motivationIsClicked
               ? utilStyles.underlineButton
               : utilStyles.noBorderButton
-          } mr-6`}
+          } mr-6 `}
           onClick={handleShowMotivation}
         >
           Motivation
@@ -167,7 +167,7 @@ const ToggleSolutions = () => {
       <Motivation showMotivation={showMotivation} />
       <Mindful showMindful={showMindful} />
       <Consistency showConsistency={showConsistency} />
-    </>
+    </div>
   );
 };
 

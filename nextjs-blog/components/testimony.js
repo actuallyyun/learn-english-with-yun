@@ -4,12 +4,12 @@ import proseStyles from "../styles/prose.module.css";
 const Testimony = () => {
   return (
     <div>
-      <div className="px-5  pt-6 md:pt-10">
+      <div className="px-5  pt-6 md:pt-10 dark:text-slate-200  text-gray-700">
         <p className={`text-center ${utilStyles.heading2Xl}`}>
           Loved by hundreds of English learners{" "}
         </p>
         <div
-          className={`grid md:grid-cols-2 md:py-10 py-5 grid-cols-1 gap-4 ${proseStyles.testimony} m-auto text-gray-700`}
+          className={`grid md:grid-cols-2 md:py-10 py-5 grid-cols-1 gap-4 ${proseStyles.testimony} m-auto`}
         >
           <div className="flex flex-col justify-between h-full relative md:px-8 md:pb-8 pt-4 rounded-lg ">
             <section>
