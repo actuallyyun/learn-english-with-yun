@@ -11,16 +11,24 @@ export default function Post(postData) {
       <Head>
         <title>{data.title}</title>
       </Head>
+      <div className="grid justify-items-center font-sans ">
+        <div className="w-11/12 md:3/4">
+          <h1 className={`${utilStyles.headingXl} text-center`}>
+            {data.title}
+          </h1>
+          <div className="text-slate-600 pb-2 text-center">
+            <p>By {data.author}</p>
+            <Date dateString={data.date} />{" "}
+          </div>
 
-      <h1 className={utilStyles.headingXl}>{data.title}</h1>
-      <br />
-      <div className={utilStyles.lightText}>
-        <Date dateString={data.date} />
+          <br />
+          <div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
       </div>
-      <div>{data.preview}</div>
-
-      <br />
-      <div dangerouslySetInnerHTML={{ __html: data.contentHtml }} />
     </Layout>
   );
 }
