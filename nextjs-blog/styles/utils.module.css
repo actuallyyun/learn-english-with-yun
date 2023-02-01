@@ -101,6 +101,13 @@
   transform: translateY(0);
 }
 
+.hiddenDelay {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 2s;
+}
+
 .scrollAnimation:nth-child(2) {
   transition-delay: 200ms;
 }

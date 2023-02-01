@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import ScrollAreaHeartBeat from "../components/scrollHeartBeat";
+import NotEnough from "../components/notEnough";
 import ToggleSolutions from "../components/toggleSolutions";
 import Quote from "../components/quote";
 import NewMethods from "../components/newMethods";
@@ -28,7 +28,7 @@ export default function Home({ allPostsData }) {
         <div className="flex justify-center pt-10 md:py-24">
           <Heartbeat />
         </div>
-        <ScrollAreaHeartBeat />
+        <NotEnough />
 
         <div className={` mx-auto p-8 pt-20 text-center`}>
           <p className={`${utilStyles.heading2Xl}`}>Change your mindset </p>
