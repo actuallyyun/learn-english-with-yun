@@ -16,7 +16,7 @@ const DarkModeToogle = (props) => {
   return (
     <button
       onClick={props.handleDarkModeChange}
-      className="pl-3 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-150 "
+      className="pl-3 opacity-60 hover:opacity-100 transition-opacity ease-in-out duration-150 pr-0"
     >
       {props.darkMode ? (
         <svg
@@ -55,14 +55,14 @@ const DarkModeToogle = (props) => {
 
 const BookClassButton = () => {
   return (
-    <button
-      type="button"
+    <a
+      href="https://calendly.com/this-jiyun/english-class"
       className="transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 rounded-md pb-2 pt-2 bg-purple-100 px-3 text-purple-700 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 dark:bg-white dark:text-black 
                   dark:hover:bg-purple-400 dark:hover:text-white"
     >
       <span className="px-1 sr-only">Book A Trial Lesson</span>
       Start Now
-    </button>
+    </a>
   );
 };
 
@@ -116,7 +116,7 @@ export default function Nav(props) {
                   ))}
                 </div>
               </div>
-              <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+              <div className=" inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-3">
                 <BookClassButton />
               </div>
               <DarkModeToogle
