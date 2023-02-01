@@ -8,8 +8,14 @@ const Intro = () => {
   return (
     <div>
       <div className="relative">
-        <div className={`${utilStyles.bgImage} absolute z-0`}>
-          <Image src={introPic} alt="intro background image" fill priority />
+        <div className={`${utilStyles.bgImage} absolute z-0 `}>
+          <Image
+            src={introPic}
+            alt="intro background image"
+            fill
+            priority
+            className="rounded-lg"
+          />
         </div>
         <div
           className={`flex flex-col items-center text-center pt-8 ${utilStyles.introSectionHeight} z-10 relative`}
