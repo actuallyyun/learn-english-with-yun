@@ -1,5 +1,6 @@
 import utilStyles from "../styles/utils.module.css";
 import Image from "next/image";
+import coachPic from "../public/images/blueMountainsYun.jpg";
 
 const MeetCoach = () => {
   return (
@@ -23,12 +24,7 @@ const MeetCoach = () => {
             </div>
           </div>
           <div class="w-full rounded-xl">
-            <Image
-              src="/images/blueMountainsYun.jpg"
-              width={900}
-              height={800}
-              class="rounded-lg"
-            />
+            <Image src={coachPic} class="rounded-lg" />
           </div>
         </div>
       </div>
