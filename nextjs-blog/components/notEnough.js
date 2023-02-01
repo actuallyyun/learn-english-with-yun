@@ -7,7 +7,7 @@ const ScrollWrapper = ({ children }) => {
   return <div className="flex md:py-10">{children}</div>;
 };
 
-const ScrollAreaHeartBeat = () => {
+const NotEnough = () => {
   const { ref, inView } = useInView({
     threshold: 0,
   });
@@ -53,4 +53,4 @@ const ScrollAreaHeartBeat = () => {
   );
 };
 
-export default ScrollAreaHeartBeat;
+export default NotEnough;

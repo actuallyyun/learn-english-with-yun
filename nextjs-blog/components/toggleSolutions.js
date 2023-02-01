@@ -12,10 +12,9 @@ const Motivation = ({ showMotivation }) => {
           Find what motivates you and leverage it for your learning.
         </p>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat
-          soluta vero distinctio eligendi. Consequuntur autem excepturi maxime,
-          repudiandae quisquam perferendis quam eveniet ut non voluptatibus
-          labore molestias. Officia, iste molestiae.
+          Studies have shown that motivation has a positive impact on second
+          language learning. It has been shown to increase learners' effort,
+          persistence, and participation in language learning tasks.
         </p>
       </div>
       <div className="">
@@ -131,14 +130,14 @@ const ToggleSolutions = () => {
   };
 
   return (
-    <>
+    <div className="dark:text-slate-50">
       <div className="flex flex-row m-auto w-3/4 justify-center text-2xl pb-10">
         <button
           className={`${
             motivationIsClicked
               ? utilStyles.underlineButton
               : utilStyles.noBorderButton
-          } mr-6`}
+          } mr-6 `}
           onClick={handleShowMotivation}
         >
           Motivation
@@ -151,7 +150,7 @@ const ToggleSolutions = () => {
           } mr-6`}
           onClick={handleShowMindful}
         >
-          Mindful Practice
+          Meaningful Practice
         </button>
         <button
           className={`${
@@ -168,7 +167,7 @@ const ToggleSolutions = () => {
       <Motivation showMotivation={showMotivation} />
       <Mindful showMindful={showMindful} />
       <Consistency showConsistency={showConsistency} />
-    </>
+    </div>
   );
 };
 

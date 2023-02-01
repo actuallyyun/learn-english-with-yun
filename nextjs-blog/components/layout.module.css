@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
 .container {
   display: flex;
   flex-direction: column;
   line-height: 24px;
   box-sizing: border-box;
-  font-family: ui-sans-serif, system-ui, "Roboto", "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji";
+  font-family: "quicksand", ui-sans-serif, system-ui, "Roboto", "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji";
   color: rgb(31 41 55);
 }
 

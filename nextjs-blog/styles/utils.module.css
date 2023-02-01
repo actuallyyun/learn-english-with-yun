@@ -56,9 +56,12 @@
   color: #666;
 }
 
-.backGroundImage {
-  background-image: url("/images/pramod-tiwari-mvEG9mqVmcw-unsplash.jpg");
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
   height: 560px;
+  object-fit: cover;
 }
 
 .introSectionHeight {
@@ -99,6 +102,13 @@
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+}
+
+.hiddenDelay {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100%);
+  transition: all 2s;
 }
 
 .scrollAnimation:nth-child(2) {

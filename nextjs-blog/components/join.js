@@ -19,8 +19,8 @@ const Join = () => {
               </a>
             </button>
             <p class="text-lg font-semibold">
-              The beautiful about learning is that nobody can take it away from
-              you.
+              The beautiful thing about learning is that nobody can take it away
+              from you.
             </p>
           </div>
         </div>
