@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply text-2xl;
+    @apply my-3;
+    @apply leading-relaxed;
+  }
+  p {
+    @apply my-2;
+    @apply leading-relaxed;
+  }
+  code {
+    @apply font-mono;
+    @apply bg-slate-50;
+    @apply text-blue-500;
+    @apply rounded-sm;
+    @apply font-thin;
+    @apply p-1;
+    @apply text-sm;
+  }
+  img {
+    @apply rounded-lg;
+  }
+}

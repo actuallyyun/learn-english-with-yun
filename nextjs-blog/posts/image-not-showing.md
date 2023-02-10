@@ -1,6 +1,8 @@
 ---
 title: "Why isn't my image found? Deploy Next.js blog project to Vercel"
+author: "Yun Ji"
 date: "2023-01-09"
+preview: "I followed the well-written Next.js blog project tutorial, created a blog, and deployed it to Vercel. The deployment was amazingly easy and fast. A real one click. Comparing to what I had to do to deploy my Django/Python project to Heroku, the developer experience with Next.js/Vercel was next level goodness."
 ---
 
 ![image-not-showing](/images/image-not-showing.jpg)

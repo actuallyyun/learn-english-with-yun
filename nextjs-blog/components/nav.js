@@ -3,9 +3,9 @@ import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Articles", href: "##", current: false },
-  { name: "FAQ", href: "##", current: false },
+  { name: "Home", href: "http://localhost:3000", current: true },
+  { name: "Articles", href: "http://localhost:3000/articles", current: false },
+  { name: "FAQ", href: "http://localhost:3000/faq", current: false },
 ];
 
 function classNames(...classes) {
@@ -89,7 +89,7 @@ export default function Nav(props) {
                 <div className="flex flex-shrink-0 items-center">
                   <div>
                     <div className="flex text-purple-700 dark:text-white font-bold">
-                      <a href="#">GoodEnough English</a>
+                      <a href="/">GoodEnough English</a>
                     </div>
                     <div className="dark:text-slate-50 text-gray-900 font-light text-xs text-center sm:text-right">
                       with Yun Ji
